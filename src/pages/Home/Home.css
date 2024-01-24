@@ -1,0 +1,97 @@
+.home{
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.home__circle{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home__baraka{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home__img{
+    width: 500px;
+}
+.home__baraka button{
+    padding: 20px 30px;
+    color: white;
+    font-size: 22px;
+    background:  rgb(34, 24, 121);
+    border-radius: 30px;
+    border: none;
+}
+.home__circle button{
+    padding: 20px 30px;
+    color: white;
+    font-size: 22px;
+    background:  rgb(34, 24, 121);
+    border-radius: 30px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .home__circle{
+        width: 100%;
+    }
+    .home__baraka{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 520px){
+    .home__img{
+        width: 400px;
+    }
+    .home__circle button{
+        font-size: 18px;
+    }
+    .home__baraka button{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 420px){
+    .home__img{
+        width: 300px;
+    }
+    .home__circle button{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .home__baraka button{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 300px){
+    .home__img{
+        width: 270px;
+    }
+    .home__circle button{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+    .home__baraka button{
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,103 @@
+.winner {
+  border: 2px solid yellow; /* Highlight the winning sector with a yellow border */
+}
+
+/* Your existing CSS styles for other elements */
+.wheel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.wheel {
+  width: 500px;
+  height: 500px;
+  border: 10px solid rgb(34, 24, 121);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transform: rotate(0); /* Set the initial rotation */
+  transition: transform 7s ease-in-out; /* Adjust the duration to 7 seconds */
+}
+
+.wheel.spinning {
+  animation: rotate 7s linear infinite; /* Make the rotation perpetual with a total duration of 7 seconds */
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(-360deg); /* Rotat  e to the right continuously */
+  }
+}
+
+.sector {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% 45%, 100% 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.sector p {
+  transform: translateX(120px) translateY(-50px) rotate(160deg);
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.spin-button {
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: rgb(34, 24, 121);
+}
+
+/* Additional styling for the wheel sectors */
+.sector:nth-child(odd) {
+  background-color: #ffcc00; /* Set the background color for odd-numbered sectors */
+}
+
+.sector:nth-child(even) {
+  background-color: #ff9900; /* Set the background color for even-numbered sectors */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 600px) {
+  .wheel {
+    width: 400px;
+    height: 400px;
+  }
+  .wheel-container {
+    overflow: hidden;
+  }
+  .sector p {
+    transform: translateX(100px) translateY(-50px) rotate(155deg);
+    font-size: 16px;
+  }
+}
+.spin__click{
+  width: 30px;
+  height: 40px;
+  background-color: rgb(34, 24, 121);
+  border-radius: 15px;
+}
+.clickcac{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(170px);
+}
