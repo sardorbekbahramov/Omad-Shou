@@ -7,8 +7,8 @@ const GameHeader = () => {
         <>
             <header>
                 <div className='background'>
-                    <div className="">
-
+                    <div className="header_container">
+                        
                     </div>
                 </div>
             </header>
