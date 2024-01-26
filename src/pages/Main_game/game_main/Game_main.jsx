@@ -87,6 +87,7 @@ const generateRandomNumber = () => {
                     wrapperClass
                     />
                 </div>}
+                
             {showContent && (
                 <>
                     <GameHeader/> 

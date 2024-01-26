@@ -41,11 +41,11 @@ body {
     justify-content: space-around;
     margin-top: 20px;
 }
-input, button {
+/* input, button {
     border: none;
     outline: none;
     background-color: none;
-}
+} */
 
 .main_bg {
     background-color: #cc1f1f;
