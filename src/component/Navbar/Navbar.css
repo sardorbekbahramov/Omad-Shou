@@ -1,7 +1,9 @@
+/* -------------------HEAD-------------------------- */
 
-.container {
+.container_head {
   max-width: 90%;
   margin: auto;
+  
 }
 .d_flex {
   display: flex;
@@ -53,6 +55,7 @@ button {
   margin-right: 30px;
   font-size: 13px;
 }
+/* -------------------HEAD finished-------------------------- */
 
 /* Navbar.css */
 
@@ -63,12 +66,16 @@ button {
     overflow: hidden;
     justify-content: space-around;
     padding: 20px 0;
-    background-color: rgb(34, 24, 121);
+    background-color: rgb(45, 35, 133);
     color: white;
+    box-shadow: -1px 15px 17px -8px rgba(85, 84, 84, 0.4);
+
   }
   
   .logo {
     width: 80px;
+    box-shadow: 0 5px 15px rgba(228, 228, 228, 0.35);
+    border-radius: 40px;
   }
   
   .navbar__collection {
@@ -79,9 +86,18 @@ button {
   .navbar__item {
     text-decoration: none;
     color: white;
-    padding: 0 20px;
+    padding: 14px 25px;
+    background: #000;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(122, 122, 122, 0.35);
+    background: linear-gradient(to right, #5c6bc0, #613bb9);
+
   }
   
+
   .navbar__item_2 {
     text-decoration: none;
     color: white;
@@ -100,6 +116,15 @@ button {
     display: flex;
     color: white;
     text-decoration: none;
+    padding: 14px 25px;
+    background: #000;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(122, 122, 122, 0.35);
+    background: linear-gradient(to right, #5c6bc0, #613bb9);
+
   }
   
   .navbar__sign_in p {

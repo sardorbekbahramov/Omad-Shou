@@ -5,6 +5,7 @@ import Menu from './pages/Menu/Menu'
 import SignIn from './pages/Sign_in/SignIn'
 import SpinningWheel from './pages/Spinning-wheel/FortuneWheel'
 import GameMain from './pages/Main_game/game_main/Game_main'
+import Payment from './pages/Payment/Payment'
 // import Profile from './pages/Profile/Profile'
 
 export const Routes = () => {
@@ -21,6 +22,7 @@ export const Routes = () => {
                 // { path: 'profile', element: <Profile /> },
                 { path: 'omad', element: < SpinningWheel /> },
                 { path: 'boriga_baraka', element: < GameMain /> },
+                { path: 'payment', element: < Payment /> },
             ],
         },
     ];

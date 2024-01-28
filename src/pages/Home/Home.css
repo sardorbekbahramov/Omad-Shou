@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #ffffff;
 }
 .home__circle{
     width: 50%;
@@ -27,18 +28,26 @@
     padding: 20px 30px;
     color: white;
     font-size: 22px;
-    background:  rgb(34, 24, 121);
+    box-shadow: 0 5px 15px rgba(122, 122, 122, 0.35);
+    background: linear-gradient(to right, #5c6bc0, #613bb9);
     border-radius: 30px;
-    border: none;
+    border: 1px solid rgb(47, 123, 126);
+
 }
 .home__circle button{
     padding: 20px 30px;
     color: white;
     font-size: 22px;
-    background:  rgb(34, 24, 121);
+    box-shadow: 0 5px 15px rgba(122, 122, 122, 0.35);
+    background: linear-gradient(to right, #5c6bc0, #613bb9);
     border-radius: 30px;
-    border: none;
+    border: 1px solid rgb(47, 123, 126);
 }
+
+.home__baraka button:hover, .home__circle button:hover {
+    background: linear-gradient(to left, #5c6bc0, #613bb9);
+}
+
 
 
 

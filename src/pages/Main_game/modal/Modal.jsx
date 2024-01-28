@@ -1,6 +1,6 @@
+import React from 'react';
 import 'react-responsive-modal/styles.css';
 import "../game_main/game_main.css"
-import React, { useState, useEffect } from 'react';
 
 
 
