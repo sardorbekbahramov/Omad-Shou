@@ -1,3 +1,12 @@
+.loader_header{
+    color: #5c6bc0;
+    font-size: 32px;
+    position: relative;
+    right: 50px;
+    top: 10px;
+    text-shadow: 2px 8px 4px rgb(0, 0, 0, 0.5);
+}
+
 .home{
     width: 100%;
     display: flex;
@@ -5,7 +14,6 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #ffffff;
 }
 .home__circle{
     width: 50%;

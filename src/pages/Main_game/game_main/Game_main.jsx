@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import "./game_main.css"
-import GameHeader from '../game_header/Game_header';
+import "./game_main.css";
 import { Audio } from 'react-loader-spinner';
 import cart_image from '../game_images/cart.jpg';
 import data from "../Database/CardData"
 import Modal from '../modal/Modal';
+import Navbar from '../../../component/Navbar/Navbar';
+import Footer from '../../../component/Footer/Footer';
 
 
 
@@ -90,7 +91,7 @@ const generateRandomNumber = () => {
                 
             {showContent && (
                 <>
-                    <GameHeader/> 
+                    <Navbar/>
                     <section className='game_main'>
                     {isModalOpen && (
                         <Modal closeModal={closeModal} content={randomItem} />
@@ -162,6 +163,9 @@ const generateRandomNumber = () => {
                             </div>
                         </div>
                     </section>
+                    <div className="footer_boriga_baraka">
+                        <Footer/>
+                    </div>
                 </>
             )}
         </>

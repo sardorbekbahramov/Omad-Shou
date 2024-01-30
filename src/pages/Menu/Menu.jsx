@@ -4,16 +4,19 @@ import Baraka from '../../assets/baraka.png'
 import { ImCross } from "react-icons/im";
 import './Menu.css'
 import { Link } from 'react-router-dom';
+import Navbar from '../../component/Navbar/Navbar';
 
 function Menu() {
   return (
-    <div className="menu">
+    <>
+    <Navbar/>
+      <div className="menu">
       <div className="menus">
 
       <div className="menu__head">
         <h1>Menu</h1>
         <Link className='menu__cross' to={"/"}>
-        <ImCross/>
+        <ImCross className='icon'/>
         </Link>
       </div>
       <div className="menu__text">
@@ -33,6 +36,7 @@ function Menu() {
       </div>
       </div>
     </div>
+    </>
   )
 }
 
