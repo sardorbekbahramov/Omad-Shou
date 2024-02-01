@@ -35,7 +35,9 @@ const Home = () => {
                     wrapperStyle
                     wrapperClass
                     />
-                    <h1 className='loader_header'>Welcome Global Games</h1>
+                    <div className="header_box_heading">
+                        <h1 className='loader_header'>Welcome Global Games</h1>
+                    </div>
                 </div>}
             {showContent && ( 
                 <>

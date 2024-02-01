@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './FortuneWheel.css';
+import Navbar from '../../component/Navbar/Navbar';
+import Footer from '../../component/Footer/Footer';
 
 const FortuneWheel = () => {
   const [rotation, setRotation] = useState(0);
@@ -47,35 +49,39 @@ const FortuneWheel = () => {
   ];
 
   return (
+    <>
+    <Navbar/>
     <div className='safd'>
-    <div className="clickcac">
+      <div className="clickcac">
+        <div className="spin__click"></div>
+      </div>
 
-    <div className="spin__click"></div>
-    </div>
-    <div className="wheel-container">
-      <div className={`wheel ${isSpinning ? 'spinning' : ''}`} style={{ transform: `rotate(${rotation}deg)` }}>
-        {prizes.map((prize, index) => (
-          <div
-          key={index}
-          className={`sector ${winnerIndex === index ? 'winner' : ''}`}
-          style={{
-            transform: `rotate(${(index * 360) / prizes.length}deg)`,
-            backgroundColor: getRandomColor(),
-          }}
-          >
-            <p>{prize}</p>
-          </div>
-        ))}
+      <div className="wheel-container">
+        <div className={`wheel ${isSpinning ? 'spinning' : ''}`} style={{ transform: `rotate(${rotation}deg)` }}>
+          {prizes.map((prize, index) => (
+            <div
+            key={index}
+            className={`sector ${winnerIndex === index ? 'winner' : ''}`}
+            style={{
+              transform: `rotate(${(index * 360) / prizes.length}deg)`,
+              backgroundColor: getRandomColor(),
+            }}
+            >
+              <p>{prize}</p>
+            </div>
+          ))}
+        </div>
+        {isSpinning ? (
+          <div className="message">Spinning...</div>
+          ) : (
+            <button className="spin-button" onClick={spinWheel}>
+            Spin the Wheel
+          </button>
+        )}
       </div>
-      {isSpinning ? (
-        <div className="message">Spinning...</div>
-        ) : (
-          <button className="spin-button" onClick={spinWheel}>
-          Spin the Wheel
-        </button>
-      )}
     </div>
-      </div>
+    <Footer/>
+    </>
   );
 };
 
