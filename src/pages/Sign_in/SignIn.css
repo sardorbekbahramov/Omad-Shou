@@ -8,13 +8,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    flex-direction: column;
-    height: 100vh;
-} */
-
+.sign_content_full{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
 .container_full{
     background-color: #fff;
     border-radius: 30px;
@@ -24,11 +24,6 @@
     width: 768px;
     max-width: 100%;
     min-height: 480px;
-
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
 }
 
 .container_full p{
@@ -218,7 +213,7 @@
 }
 .footer_sign {
     position: relative;
-    top: 70vh;
+    top: 190px;
 }
 
 

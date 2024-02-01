@@ -18,6 +18,7 @@ const SignIn = () => {
   return (
     <>
     <Navbar/>
+    <div className="sign_content_full">
     <div className={`container_full ${isContainerActive ? 'active' : ''}`} id="container">
       <div className="form-container sign-up">
         <form>
@@ -65,6 +66,7 @@ const SignIn = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
     <div className='footer_sign'>
       <Footer/>
