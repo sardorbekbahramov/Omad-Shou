@@ -222,7 +222,22 @@
 }
 
 
-
+@media(max-width:425px){
+    .toggle-container{
+        width: 50%;
+    }
+    .toggle-panel{
+        padding: 0 10px;
+        width: 50%;
+    }
+    .sign-in{
+        width: 60%;
+    }
+    .sign-up{
+        width: 60%;
+        left: -60px;
+    }
+}
 
 
 

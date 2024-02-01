@@ -9,6 +9,20 @@
     max-width: 90%;
     margin: auto;
 }
+@media(max-width:1024px){
+    .container_footer{
+        max-width: 100%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: auto 10px;
+    }
+}
+@media(max-width:425px){
+    .container_footer{
+        justify-content: center;
+    }
+}
 
 footer {
     position: relative;
@@ -48,6 +62,14 @@ footer h2 {
 footer li {
     margin-bottom: 10px;
     opacity: 0.5;
+}
+@media(max-width:768px){
+    footer h1,
+    footer h2,
+    footer li,
+    footer p{
+        text-align: center;
+    }
 }
 .box {
     position: relative;

@@ -1,254 +1,282 @@
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
 /* =======  Loader  =============== */
 .loader {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 /* =======  Loader  =============== */
 
 body {
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 *::selection {
-    background-color: #ffc2cb;
-    color: rgb(7, 82, 133);
+  background-color: #ffc2cb;
+  color: rgb(7, 82, 133);
 }
 .background {
-    background-color: #ffffff;
-    padding: 60px 0;
+  background-color: #ffffff;
+  padding: 60px 0;
 }
-  
 
-  
 .d-flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.f-flex{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+.f-flex {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .main_bg {
-    background-color: #cc1f1f;
-    max-height: 70vh;
+  background-color: #cc1f1f;
+  max-height: 70vh;
 }
 
 .container {
-    position: relative;
-    top: 20px;
+  position: relative;
+  top: 20px;
 }
 .content_container {
-    background-image: url(../game_images/cart-3.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 65%;
-    height: 500px;
-    right: 50px;
-    position: relative;
-    filter: contrast(85%);
-    border: 1px solid gray;
-    box-shadow: 12px 13px 14px rgba(206, 206, 206, 0.5);
+  background-image: url(../game_images/cart-3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 65%;
+  height: 500px;
+  right: 50px;
+  position: relative;
+  filter: contrast(85%);
+  border: 1px solid gray;
+  box-shadow: 12px 13px 14px rgba(206, 206, 206, 0.5);
 }
-
 
 .f-flex li {
-    background-color: #4B4D66;
-    width: 76px;
-    height: 108px;
-    position: relative;
-    border-top:3px solid #e9e4e4 ;
-    opacity: .9;
-
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ccc;
-
+  background-color: #4b4d66;
+  width: 76px;
+  height: 108px;
+  position: relative;
+  border-top: 3px solid #e9e4e4;
+  opacity: 0.9;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
-.content_card{
-    position: relative;
-    top: 20px;
-    width: 100%;
-    
-    
+.content_card {
+  position: relative;
+  top: 20px;
+  width: 100%;
 }
 
-
-
-.f-flex li img{
-    max-width: 100%;
-    height: auto; 
-    display: inline-block; 
-    margin: 0 auto;
-    border-top: 2px solid #fff;
-    border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
-    cursor: pointer;
+.f-flex li img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin: 0 auto;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  cursor: pointer;
+}
+@media(max-width:1024px){
+    .content_card{
+        padding-bottom: 20px;
+    }
+    .f-flex{
+        flex-wrap: wrap;
+    }
+    .f-flex li{
+        width: 120px;
+        height: 90px;
+        padding: 8px;
+    }
+    .f-flex li img{
+        max-width: 120px;
+        height: 100%;
+    }
+    .content_container{
+        height: auto;
+        right: 0;
+        width: 80%;
+        padding-bottom: 20px;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+    }
 }
 .clicked {
-    border-top: 3px solid #b10000 !important;
-    /* border-left: 2px solid #b10000 !important;
+  border-top: 3px solid #b10000 !important;
+  /* border-left: 2px solid #b10000 !important;
     border-right: 2px solid #b10000 !important; */
 }
 
 /* ============finished card content ================ */
 
 /* ============== Gift content box =================== */
-.gift_products{
-    background: rgb(47, 72, 141);
-    filter: contrast(120%);
-    width: 25%;
-    left: 70px;
-    height: 720px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-} 
+.gift_products {
+  background: rgb(47, 72, 141);
+  filter: contrast(120%);
+  width: 25%;
+  left: 70px;
+  height: 720px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
 .gift_content ul {
-    margin-left: 10px;
-    font-size: 16px;
+  margin-left: 10px;
+  font-size: 16px;
 }
 
 .gift_content {
-    width: 48%;
-    max-height: 90vh;
+  width: 48%;
+  max-height: 90vh;
 }
 
-.gift_content ul li{
-    color: #fff;
-    background-color: rgb(226, 172, 36);
-    padding: 16px 15px;
-    margin-top: 10px;
-    font-size: .57em;
-    font-weight: 600;
-    box-shadow: inset -2px -13px 6px hsla(0, 0%, 0%, .2), inset 2px 4px 6px hsla(0, 0%, 0%, .3) ;
-    cursor: pointer;
-    text-transform: uppercase;
-    
-
+.gift_content ul li {
+  color: #fff;
+  background-color: rgb(226, 172, 36);
+  padding: 16px 15px;
+  margin-top: 10px;
+  font-size: 0.57em;
+  font-weight: 600;
+  box-shadow: inset -2px -13px 6px hsla(0, 0%, 0%, 0.2),
+    inset 2px 4px 6px hsla(0, 0%, 0%, 0.3);
+  cursor: pointer;
+  text-transform: uppercase;
 }
 .gift_content ul li:hover {
-    background-color: rgb(230, 178, 46);
-    transition: .5s;
-    
+  background-color: rgb(230, 178, 46);
+  transition: 0.5s;
 }
 
-
-
-
-
-
-
+@media (max-width: 1024px) {
+  .gift_content {
+    width: auto;
+  }
+  .gift_content ul{
+    margin: 0;
+  }
+  .gift_content ul li{
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    width: auto;
+  }
+  .gift_products{
+    width: 180px;
+    left: 10px;
+    height: auto;
+    top: 0;
+  }
+}
 
 /* ========== btn button =============> */
 
-.btn_box{
-    display: flex;
-    position: relative;
-    padding: 12px 15px;
-    background: #1c5eb4;
-    box-shadow: inset -2px -13px 6px hsla(0, 0%, 0%, .2), inset 2px 4px 6px hsla(0, 0%, 0%, .3) ;
-    border-radius: 4px;
-    bottom: 300px;  
+.btn_box {
+  display: flex;
+  position: relative;
+  padding: 12px 15px;
+  background: #1c5eb4;
+  box-shadow: inset -2px -13px 6px hsla(0, 0%, 0%, 0.2),
+    inset 2px 4px 6px hsla(0, 0%, 0%, 0.3);
+  border-radius: 4px;
+  bottom: 300px;
 }
-.btn_box:hover{
-    background: #2165be;
-
+.btn_box:hover {
+  background: #2165be;
 }
 .btn_box span {
-    position: relative;
-    margin-right: 10px;
+  position: relative;
+  margin-right: 10px;
 }
- button {
-    background: #2063bb;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-
+button {
+  background: #2063bb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
-.random_content{
-    display: flex;
-    position: absolute;
+.random_content {
+  display: flex;
+  position: absolute;
 }
 
 .random_num {
-    position: relative;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    width: 85%;
-    padding: 12px 15px;
-    background-color: #2063bb;
-    box-shadow: inset -2px -13px 6px hsla(0, 0%, 0%, .2), inset 2px 4px 6px hsla(0, 0%, 0%, .3) ;
-    bottom: 300px;
-    margin-left: 15px;
-
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 85%;
+  padding: 12px 15px;
+  background-color: #2063bb;
+  box-shadow: inset -2px -13px 6px hsla(0, 0%, 0%, 0.2),
+    inset 2px 4px 6px hsla(0, 0%, 0%, 0.3);
+  bottom: 300px;
+  margin-left: 15px;
 }
 .num {
-    display: inline-block;
-    position: relative;
-    left: 15px;
+  display: inline-block;
+  position: relative;
+  left: 15px;
 }
-
 
 /* =========== MODAL ============= */
 
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  .modal-content {
-    position: relative;
-    background: rgb(135,135,136);
-    background: linear-gradient(90deg, rgba(135,135,136,1) 0%, rgba(49,58,126,1) 35%, rgba(0,212,255,1) 100%);
-    padding: 20px;
-    max-width: 80%;
-    max-height: 80%;
-    width: 500px;
-    height: 200px;
-    overflow: auto;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 20px;
-    color: #fa0808;
-    cursor: pointer;
-    font-size: 25px;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
 
+.modal-content {
+  position: relative;
+  background: rgb(135, 135, 136);
+  background: linear-gradient(
+    90deg,
+    rgba(135, 135, 136, 1) 0%,
+    rgba(49, 58, 126, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 20px;
+  max-width: 80%;
+  max-height: 80%;
+  width: 500px;
+  height: 200px;
+  overflow: auto;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
 
-  /* footer style for boriga-baraka */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  color: #fa0808;
+  cursor: pointer;
+  font-size: 25px;
+}
 
-
-
+/* footer style for boriga-baraka */
