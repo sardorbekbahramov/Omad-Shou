@@ -18,6 +18,7 @@ const Payment = () => {
     return (
         <>
             <Navbar/>
+            <div className="payment_full">
             <div className="container-payment">
                 <form className='payment_form'>
                     <div className="email">
@@ -60,7 +61,8 @@ const Payment = () => {
                     <button type='submit'>Pay</button>
                 </form>
             </div>
-            <div className='footer_sign'>
+            </div>
+            <div className='footer_signing'>
                 <Footer/>
             </div>
         </>

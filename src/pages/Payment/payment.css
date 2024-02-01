@@ -1,5 +1,16 @@
 
-
+.payment_full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+    position: relative;
+    top: 50px;
+}
+.footer_signing {
+    position: relative;
+    top: 70px;
+}
 .container-payment{
     background-color: #fff;
     border-radius: 30px;
@@ -9,11 +20,6 @@
     max-width: 100%;
     min-height: 600px;
     padding: 12px 14px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 55%;
-    left: 50%;
-    /* padding-top: 130px; */
 }
 .payment_form {
     position: relative;
@@ -141,8 +147,6 @@
         border-radius: 20px;
         width: 280px;
         min-height: 500px;
-        position: absolute;
-        top: 60%;
     }
     .payment_form {
         position: relative;
@@ -206,8 +210,6 @@
         border-radius: 20px;
         width: 370px;
         min-height: 500px;
-        position: absolute;
-        top: 60%;
     }
     .payment_form {
         position: relative;
@@ -271,8 +273,6 @@
         border-radius: 20px;
         width: 440px;
         min-height: 560px;
-        position: absolute;
-        top: 60%;
     }
     .payment_form {
         position: relative;
@@ -332,10 +332,6 @@
 }
 
 @media screen and (max-width: 1000px){
-    .container-payment{
-        position: absolute;
-        top: 59%;
-    }
     .payment_form label {
         display: block;
         font-weight: 500;
