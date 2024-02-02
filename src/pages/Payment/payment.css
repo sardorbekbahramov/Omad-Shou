@@ -1,23 +1,29 @@
 
-
+.payment_full {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+    position: relative;
+    top: 50px;
+}
+.footer_signing {
+    position: relative;
+    top: 70px;
+}
 .container-payment{
     background-color: #fff;
     border-radius: 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
+    box-shadow: 0 5px 15px #00000059;
     overflow: hidden;
     width: 468px;
     max-width: 100%;
     min-height: 600px;
     padding: 12px 14px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 55%;
-    left: 50%;
 }
 .payment_form {
     position: relative;
-    top: 25px;
+    top: 35px;
 }
 .payment_form .email {
     justify-content: center;
@@ -134,4 +140,244 @@
     border-radius: 8px;
     border: 2px solid rgb(115, 185, 241);
 }
+
+
+@media screen and (max-width: 300px){
+    .container-payment{
+        border-radius: 20px;
+        width: 280px;
+        min-height: 500px;
+    }
+    .payment_form {
+        position: relative;
+        top: 5px;
+    }
+    .payment_form .email {
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+    }
+    .payment_form label {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .payment_form input {
+        border: 1px solid gray ;
+        width: 100%;
+        height: 35px;
+        border-radius: 8px;
+    }
+    .input-icon {
+        position: absolute;
+        right: 10px;
+        top: 31.5%;
+        cursor: pointer;
+        color: gray;
+    }
+    .input-icons {
+        position: absolute;
+        right: 10px;
+        top: 23%;
+        display: flex;
+        margin-right: 2px;
+        color: gray;
+    }
+    /* payment security */
+    
+    .payment_form .securety input{
+        width: 10%;
+        height: 15px;
+        position: relative;
+        left: 4px;
+    
+    }
+    .payment_form .securety label{
+        position: relative;
+        left: 17px;
+    }
+    .payment_form .securety p {
+        font-size: 12px;
+    }
+    .payment_form button {
+        height: 35px;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .container-payment{
+        border-radius: 20px;
+        width: 370px;
+        min-height: 500px;
+    }
+    .payment_form {
+        position: relative;
+        top: 5px;
+    }
+    .payment_form .email {
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0;
+    }
+    .payment_form label {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .payment_form input {
+        border: 1px solid gray ;
+        width: 100%;
+        height: 39px;
+        border-radius: 8px;
+    }
+    .input-icon {
+        position: absolute;
+        right: 10px;
+        top: 36%;
+        cursor: pointer;
+        color: gray;
+    }
+    .input-icons {
+        position: absolute;
+        right: 10px;
+        top: 26%;
+        display: flex;
+        margin-right: 2px;
+        color: gray;
+    }
+    /* payment security */
+    
+    .payment_form .securety input{
+        width: 10%;
+        height: 15px;
+        position: relative;
+        left: 4px;
+    
+    }
+    .payment_form .securety label{
+        position: relative;
+        left: 17px;
+        font-weight: 500;
+    }
+    .payment_form .securety p {
+        font-size: 12px;
+    }
+    .payment_form button {
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .container-payment{
+        border-radius: 20px;
+        width: 440px;
+        min-height: 560px;
+    }
+    .payment_form {
+        position: relative;
+        top: 35px;
+    }
+    .payment_form .email {
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .payment_form label {
+        display: block;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .payment_form input {
+        border: 1px solid gray ;
+        width: 100%;
+        height: 39px;
+        border-radius: 8px;
+    }
+    .input-icon {
+        position: absolute;
+        right: 10px;
+        top: 38%;
+        cursor: pointer;
+        color: gray;
+    }
+    .input-icons {
+        position: absolute;
+        right: 10px;
+        top: 28%;
+        display: flex;
+        margin-right: 2px;
+        color: gray;
+    }
+    /* payment security */
+    
+    .payment_form .securety input{
+        width: 10%;
+        height: 15px;
+        position: relative;
+        left: 4px;
+    
+    }
+    .payment_form .securety label{
+        position: relative;
+        left: 5px;
+        font-weight: 500;
+    }
+    .payment_form .securety p {
+        font-size: 12px;
+    }
+    .payment_form button {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .payment_form label {
+        display: block;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    .input-icon {
+        position: absolute;
+        right: 10px;
+        top: 39%;
+        cursor: pointer;
+        color: gray;
+    }
+    .input-icons {
+        position: absolute;
+        right: 10px;
+        top: 30%;
+        display: flex;
+        margin-right: 2px;
+        color: gray;
+    }
+    /* payment security */
+    
+    .payment_form .securety input{
+        width: 10%;
+        height: 15px;
+        position: relative;
+        left: 4px;
+    
+    }
+    .payment_form .securety label{
+        position: relative;
+        left: 5px;
+        font-weight: 500;
+    }
+    .payment_form .securety p {
+        font-size: 12px;
+        position: relative;
+        left: 8px;
+    }
+    .payment_form button {
+        height: 43px;
+    }
+    
+}
+
+
+
 

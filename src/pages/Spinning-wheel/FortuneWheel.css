@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 67vh;
 }
 
 .wheel {
@@ -88,6 +88,13 @@
     transform: translateX(100px) translateY(-50px) rotate(155deg);
     font-size: 16px;
   }
+  .clickcac {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(90px);
+  }
+
 }
 .spin__click{
   width: 30px;
@@ -99,5 +106,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(170px);
+  transform: translateY(40px);
 }

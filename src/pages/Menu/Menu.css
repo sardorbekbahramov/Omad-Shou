@@ -64,7 +64,16 @@
     .menus{
         width: 350px;
     }
+    .menu__last img:nth-child(1){
+        width: 120px;
+    }
+    .menu__last img:nth-child(2){
+        max-width: 150px;
+    }
 }
+
+
+
 @media screen and (max-width: 390px){
     .menus{
         width: 300px;

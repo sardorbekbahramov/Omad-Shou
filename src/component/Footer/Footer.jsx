@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="box">
                         <img src={logoOmadShou} width={'50px'} alt="" />
                         <img src={logoBorigaBaraka} width={'50p'} alt="" />
-                        <p>© 2024 All Rights Reserved by the company Omad shou</p>
+                        <p>© 2024 All Rights Reserved, Omad Shou</p>
                         
                         <div className="icon d-flex">
                             <div className="img d-flex">
