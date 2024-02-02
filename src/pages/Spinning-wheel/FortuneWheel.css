@@ -151,7 +151,7 @@
     align-items: center;
     justify-content: center;
     transform: translateY(80px);
-    z-index: 99;
+    z-index: 98;
   }
   .spin__click{
     width: 0 ;
