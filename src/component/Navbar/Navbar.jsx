@@ -29,13 +29,14 @@ const Navbar = () => {
           <Link to={''} className="navbar__item">About</Link>
           <Link to={'/'} className="navbar__item">Profile</Link>
           <Link to={'/payment'} className="navbar__item">Payment</Link>
-        </ul>
-        <div className={isMobile?"show" : "hide"} onClick={handleToggle}></div>
-        
-        <Link to={'/sign_in'} className="navbar__sign_in">
+          <Link to={'/sign_in'} className="navbar__sign_in">
           <FaUser  className='fa-user'/>
           <p>Sign in</p>
         </Link>
+        </ul>
+        <div className={isMobile?"show" : "hide"} onClick={handleToggle}></div>
+        
+        
       </nav>
     </>
   );
