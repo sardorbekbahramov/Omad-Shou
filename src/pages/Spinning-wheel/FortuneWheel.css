@@ -75,7 +75,65 @@
   background-color: #ff9900; /* Set the background color for even-numbered sectors */
 }
 
+
+.spin__click{
+  width: 0;
+  height: 0;
+  border-left: 19.5px solid transparent;
+  border-right: 19.5px solid transparent;
+  border-top: 40px solid rgb(20, 32, 145);
+}
+
+.clickcac{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(60px);
+  position: relative;
+  z-index: 88;
+  
+}
+
 /* Responsive design adjustments */
+@media screen and (max-width: 800px) {
+  .wheel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 67vh;
+  }
+  
+  .wheel {
+    width: 500px;
+    height: 500px;
+    border: 10px solid rgb(34, 24, 121);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(0); /* Set the initial rotation */
+    transition: transform 7s ease-in-out; /* Adjust the duration to 7 seconds */
+  }
+  .sector p {
+    transform: translateX(100px) translateY(-50px) rotate(155deg);
+    font-size: 18px;
+  }
+  .clickcac {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(35px);
+    z-index: 99;
+  }
+  .spin__click{
+    width: 0 ;
+    height: 0;
+    border-left: 15.5px solid transparent ;
+    border-right: 15.5px solid transparent ;
+    border-top: 40px solid rgb(27, 18, 155);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .wheel {
     width: 400px;
@@ -92,19 +150,43 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(90px);
+    transform: translateY(80px);
+    z-index: 99;
+  }
+  .spin__click{
+    width: 0 ;
+    height: 0;
+    border-left: 15.5px solid transparent ;
+    border-right: 15.5px solid transparent ;
+    border-top: 40px solid rgb(27, 18, 155);
   }
 
 }
-.spin__click{
-  width: 30px;
-  height: 40px;
-  background-color: rgb(34, 24, 121);
-  border-radius: 15px;
-}
-.clickcac{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(40px);
+@media screen and (max-width: 420px) {
+  .wheel {
+    width: 360px;
+    height: 360px;
+  }
+  .wheel-container {
+    overflow: hidden;
+  }
+  .sector p {
+    transform: translateX(100px) translateY(-50px) rotate(155deg);
+    font-size: 12px;
+  }
+  .clickcac {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100px);
+    z-index: 99;
+  }
+  .spin__click{
+    width: 0 ;
+    height: 0;
+    border-left: 13.5px solid transparent ;
+    border-right: 13.5px solid transparent ;
+    border-top: 40px solid rgb(27, 18, 155);
+  }
+
 }

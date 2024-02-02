@@ -45,7 +45,7 @@ const FortuneWheel = () => {
     'Nothing here',
     '100000.00 soum',
     'Televezor',
-    '1000000.00 soum',
+    '500000.00 soum',
   ];
 
   return (
