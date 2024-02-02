@@ -54,7 +54,7 @@ const Payment = () => {
                     </div>
                     <div className="securety">
                         <input type="checkbox"/>
-                        <label>Securety save my information for checkout</label>
+                        <label>Securety save my information</label>
                         <p>Pay faster on site, everywhere Link is accepted</p>
                     </div>
 
