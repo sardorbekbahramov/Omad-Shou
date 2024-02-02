@@ -36,16 +36,16 @@ const FortuneWheel = () => {
   };
 
   const prizes = [
-    'Vacation Package',
-    'Smartphone',
-    'Fitness Tracker',
-    'Coffee Maker',
-    'Wireless Earbuds',
-    'Gift Card',
-    'Bluetooth Speaker',
-    'Streaming Device',
-    'Headphones',
-    'Portable Charger',
+    'Nothing here',
+    '5000.00 soum',
+    '10000.00 soum',
+    '5000.00 soum',
+    'Nothing here',
+    '5000 soum',
+    'Nothing here',
+    '100000.00 soum',
+    'Televezor',
+    '500000.00 soum',
   ];
 
   return (
