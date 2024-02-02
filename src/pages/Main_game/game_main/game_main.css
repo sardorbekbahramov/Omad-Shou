@@ -91,31 +91,19 @@ body {
   border-right: 2px solid #fff;
   cursor: pointer;
 }
-@media(max-width:1024px){
-    .content_card{
-        padding-bottom: 20px;
-    }
-    .f-flex{
-        flex-wrap: wrap;
-    }
-    .f-flex li{
-        width: 120px;
-        height: 90px;
-        padding: 8px;
-    }
-    .f-flex li img{
-        max-width: 120px;
-        height: 100%;
-    }
-    .content_container{
-        height: auto;
-        right: 0;
-        width: 80%;
-        padding-bottom: 20px;
-        background-size: cover;
-        background-position: center;
-        margin: 0;
-    }
+
+@media(max-width:598px){
+  .content_card{
+    top: 0;
+    padding-bottom: 0;
+  }
+  .content_container{
+    padding-bottom: 0;
+    margin-top: 128px;
+  }
+  .f-flex{
+    margin-top: 0;
+  }
 }
 .clicked {
   border-top: 3px solid #b10000 !important;
@@ -162,28 +150,40 @@ body {
   background-color: rgb(230, 178, 46);
   transition: 0.5s;
 }
-
-@media (max-width: 1024px) {
-  .gift_content {
-    width: auto;
-  }
-  .gift_content ul{
-    margin: 0;
-  }
-  .gift_content ul li{
-    padding: 5px;
-    margin: 5px;
-    font-size: 16px;
-    width: auto;
-  }
+@media(max-width:670px){
   .gift_products{
-    width: 180px;
-    left: 10px;
-    height: auto;
-    top: 0;
+    top: 130px;
   }
 }
-
+@media(max-width:506px){
+  .gift_products{
+    top: -5px;
+  }
+}
+@media(max-width:415px){
+  .gift_products{
+    top: -548px;
+  }
+}
+@media(max-width:325px){
+  .gift_products{
+    width: 70%;
+    top: -520px;
+  }
+  .gift_content ul li{
+    width: 95%;
+  }
+}
+@media(max-width:300px){
+  .gift_products{
+    width: 70%;
+    top: -600px;
+  }
+  .gift_content ul li{
+    width: 95%;
+    font-size: 4vw;
+  }
+}
 /* ========== btn button =============> */
 
 .btn_box {
@@ -233,6 +233,43 @@ button {
   left: 15px;
 }
 
+@media(max-width:968px){
+  .btn_box{
+    bottom: 400px;
+    padding: 5px;
+  }
+  .random_num{
+    padding: 5px;
+    bottom: 400px;
+  }
+  .random_content{
+    left: 20px;
+  }
+}
+@media(max-width:506px){
+  .btn_box{
+    bottom: 550px;
+    width: 30%;
+  }
+  .random_num{
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 550px;
+    width: 60%;
+  }
+  .random_content{
+    width: auto;
+  }
+}
+@media(max-width:415px){
+  .btn_box{
+    bottom: 1100px;
+  }
+  .random_num{
+    bottom: 1100px;
+  }
+}
 /* =========== MODAL ============= */
 
 .modal-overlay {
@@ -280,3 +317,52 @@ button {
 }
 
 /* footer style for boriga-baraka */
+
+@media(max-width:1024px){
+  /* main content */
+  .content_card{
+      padding-bottom: 20px;
+  }
+  .f-flex{
+      flex-wrap: wrap;
+  }
+  .f-flex li{
+      width: 120px;
+      height: 90px;
+      padding: 8px;
+  }
+  .f-flex li img{
+      max-width: 120px;
+      height: 100%;
+  }
+  .content_container{
+      height: auto;
+      right: 0;
+      width: 80%;
+      padding-bottom: 20px;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+  }
+  /* gift sidebar */
+  .gift_content {
+    width: 100%;
+  }
+  .gift_content ul{
+    margin: 0;
+    width: 100%;
+  }
+  .gift_content ul li{
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 170px;
+  }
+  .gift_products{
+    width: 180px;
+    left: 10px;
+    height: auto;
+    top: 0;
+  }
+}
