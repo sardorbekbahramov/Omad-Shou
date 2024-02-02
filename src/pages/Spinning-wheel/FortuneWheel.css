@@ -178,7 +178,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translateY(100px);
+    transform: translateY(90px);
     z-index: 99;
   }
   .spin__click{
