@@ -106,5 +106,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(40px);
+  transform: translateY(40px) ;
 }
