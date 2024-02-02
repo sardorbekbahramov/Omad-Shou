@@ -46,17 +46,17 @@ button {
 .row {
   width: 50%;
 }
-@media(max-width:850px){
-  .row{
+@media (max-width: 850px) {
+  .row {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .container_head{
+  .container_head {
     width: 100%;
   }
-  .d-flex{
+  .d-flex {
     gap: 15px;
   }
 }
@@ -73,15 +73,15 @@ button {
   margin-right: 30px;
   font-size: 13px;
 }
-@media(max-width:425px){
-  .head label{
+@media (max-width: 425px) {
+  .head label {
     margin: 0 2vw 0 0;
     font-size: 3.8vw;
   }
-  .row{
+  .row {
     justify-content: space-around;
   }
-  .d-flex{
+  .d-flex {
     gap: 25px;
   }
 }
@@ -161,14 +161,14 @@ button {
   padding: 0 0 0 20px;
 }
 
-@media(max-width:830px){
-  .navbar__sign_in{
+@media (max-width: 830px) {
+  .navbar__sign_in {
     padding: 8px 14px;
   }
-  .navbar__sign_in p{
+  .navbar__sign_in p {
     padding: 0 0 0 6px;
   }
-  .navbar__item{
+  .navbar__item {
     padding: 8px 14px;
   }
 }
@@ -423,7 +423,7 @@ button {
   }
 
   .navbar__sign_in {
-    display: none;
+    display: flex;
   }
 
   .navbar__bar {
@@ -446,7 +446,6 @@ button {
   }
 }
 
-
 .nav-links-MobileMenu {
   position: absolute;
   display: block;
@@ -462,25 +461,38 @@ button {
     rgba(0, 0, 0, 0.3) 0 30px 60px 30px;
 }
 
-.nav-links-MobileMenu .navbar__item{
+.nav-links-MobileMenu .navbar__item {
   display: block;
   width: 200px;
   margin: 20px auto;
   text-align: center;
 }
+.nav-links-MobileMenu .navbar__sign_in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
 
-@media(max-width:425px){
-  .navbar{
+@media (max-width: 425px) {
+  .navbar {
     padding: 0px auto;
   }
-  .nav-links-MobileMenu .navbar__item{
+  .nav-links-MobileMenu .navbar__item {
+    background-color: none;
+    width: 90%;
+    border: none;
+  }
+  .nav-links-MobileMenu .navbar__sign_in {
     background-color: none;
     width: 90%;
     border: none;
   }
 }
 
-.show{
+.show {
   position: absolute;
   width: 100%;
   height: 140%;
@@ -488,6 +500,6 @@ button {
   overflow: hidden;
 }
 
-.hide{
+.hide {
   display: none;
 }
