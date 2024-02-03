@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="box">
                         <img src={logoOmadShou} width={'50px'} alt="" />
                         <img src={logoBorigaBaraka} width={'50p'} alt="" />
-                        <p>© 2024 All Rights Reserved, Omad Shou</p>
+                        <p>© 2024 Barcha huquqlar himoyalangan, Omad Shou</p>
                         
                         <div className="icon d-flex">
                             <div className="img d-flex">
@@ -26,27 +26,27 @@ const Footer = () => {
                     </div>
 
                         <div className='box box_one'>
-                            <h2>About Us</h2>
+                            <h2>Biz Haqimizda</h2>
                             <ul>
-                                <li>Our Company</li>
-                                <li>Terms & Conditions</li>
-                                <li>Privacy Policy</li>
+                                <li>Bizning Kompaniya</li>
+                                <li>Shartlar & Sharoitlar</li>
+                                <li>Maxfiylik Siyosati</li>
                             </ul>
                         </div>
                         <div className='box .box_one'>
-                            <h2>Customer Care</h2>
+                            <h2>Xizmat Ko'rsatish</h2>
                             <ul>
-                                <li>Help Center </li>
-                                <li>How to Play </li>
-                                <li>Payment Guide </li>
+                                <li>Yordam Markazi</li>
+                                <li>O'yin Qoidalari </li>
+                                <li>To'lov Yo'riqnomasi</li>
                             </ul>
                         </div>
                         <div className='box .box_one'>
-                            <h2>Contact Us</h2>
+                            <h2>Biz Bilan Bog'laning</h2>
                             <ul>
-                                <li>Street: 70 Washington Square</li>
-                                <li>Email: uilib.help@gmail.com</li>
-                                <li>Phone: +1 1123 456 780</li>
+                                <li>Manzil: Labzak 70 Tashkent</li>
+                                <li>Email: omadshou.help@gmail.com</li>
+                                <li>Tel: +998 77 217 77 77</li>
                             </ul>
                         </div>
                 </div>

@@ -14,7 +14,7 @@ function Menu() {
       <div className="menus">
 
       <div className="menu__head">
-        <h1>Menu</h1>
+        <h1>Menyu</h1>
         <Link className='menu__cross' to={"/"}>
         <ImCross className='icon'/>
         </Link>

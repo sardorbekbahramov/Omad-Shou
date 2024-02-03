@@ -95,12 +95,12 @@ const GameMain = () => {
               <div className="random_content">
                 <div className="btn_box">
                   <button onClick={generateRandomNumber}>
-                    Get Randomic number
+                    Tasodifiy Raqam
                   </button>
                 </div>
                 <div className="random_num">
                   <span>
-                    You can choose another cards:
+                    Ochiladigan kartlar soni:
                     {randomValue !== null && (
                       <p className="num">{randomValue}</p>
                     )}

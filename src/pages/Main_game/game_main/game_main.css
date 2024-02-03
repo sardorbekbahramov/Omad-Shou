@@ -130,6 +130,8 @@ body {
     margin-top: 0;
   }
 }
+
+
 .clicked {
   border-top: 3px solid #b10000 !important;
   /* border-left: 2px solid #b10000 !important;
@@ -266,7 +268,7 @@ button {
 .random_num {
   position: relative;
   color: #fff;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 600;
   width: 85%;
   padding: 12px 15px;
@@ -280,6 +282,7 @@ button {
   display: inline-block;
   position: relative;
   left: 15px;
+  padding: 0 10px 0 0;
 }
 
 @media(max-width:968px){

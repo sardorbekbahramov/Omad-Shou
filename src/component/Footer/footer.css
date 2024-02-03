@@ -34,11 +34,10 @@ footer {
     padding: 50px 0;
     color: #fff;
   }
-footer h1 {
-    margin-bottom: 30px;
-    color: #e94560;
-    font-weight: 800;
-    font-style: italic;
+footer h2 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
 }
 footer .img {
     background-color: #0c2a4d;
@@ -92,4 +91,12 @@ footer li {
 .box img {
     box-shadow: 0 5px 15px rgba(148, 148, 148, 0.35);
     border-radius: 40px;
+}
+@media(max-width: 440px){
+    footer h2{
+        font-size: 18px;
+    }
+    footer ul li {
+        font-size: 14px;
+    }
 }

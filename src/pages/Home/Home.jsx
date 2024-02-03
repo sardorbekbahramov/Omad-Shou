@@ -36,7 +36,7 @@ const Home = () => {
                     wrapperClass
                     />
                     <div className="header_box_heading">
-                        <h1 className='loader_header'>Welcome Global Games</h1>
+                        <h1 className='loader_header'>Xush Kelibsiz</h1>
                     </div>
                 </div>}
             {showContent && ( 
@@ -44,15 +44,15 @@ const Home = () => {
                 <Navbar />
                 <div className='home'>
                     <div className="home__circle">
-                        <img className='home__img' src={Circle} alt="" />
+                        <img className='home__img' src={Circle} alt="img" />
                         <Link to={'/omad'}>
-                        <button>Omad shouni online oynash</button>
+                        <button>Omad shouni online o'ynash</button>
                         </Link>
                     </div>
                     <div className="home__baraka">
-                        <img className='home__img' src={Baraka} alt="" />
+                        <img className='home__img' src={Baraka} alt="img" />
                         <Link to='/boriga_baraka'>
-                        <button>Boriga barakani online oynash </button>
+                        <button>Boriga barakani online o'ynash </button>
                         </Link>
                     </div>
                 </div>

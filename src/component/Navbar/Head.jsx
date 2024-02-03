@@ -8,18 +8,18 @@ const Head = () => {
                 <div className="container_head d-flex">
                     <div className="left row">
                         <i className="fa fa-phone"></i>
-                        <label>+88121 342 5443</label>
+                        <label>+998 77 217 77 77</label>
 
                         <i className="fa fa-envelope"></i>
-                        <label>youremail@.com</label>
+                        <label>omadshou@gmail.com</label>
                     </div>
                     <div className="right row RText">
-                        <label>Theme FAQ's</label>
-                        <label>Need Helps</label>
+                        <label>📊 FAQ</label>
+                        <label>💬 Savol Javoblar</label>
                         <span>📃</span>
-                        <label>ENG</label>
-                        <span>👩‍💻</span>
-                        <label>USD</label>
+                        <label>UZB</label>
+                        <span>💰</span>
+                        <label>UZS</label>
 
                     </div>
                 </div>

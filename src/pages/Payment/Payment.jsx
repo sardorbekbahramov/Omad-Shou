@@ -23,10 +23,10 @@ const Payment = () => {
                 <form className='payment_form'>
                     <div className="email">
                         <label>Email</label>
-                        <input type="email" placeholder='youremail@gmail.com'/>
+                        <input type="email" placeholder='email@gmail.com'/>
                     </div>
                     <div className="card">
-                        <label>Card information</label>
+                        <label>Karta malumotlari</label>
                         <input type="number" placeholder='1234 1234 1234 1234' required className='input-with-icons'/>
                         <span className="input-icons">
                             <FaCcAmazonPay /> <FaCcApplePay className='one'/> <FaCcPaypal className='one'/>
@@ -38,27 +38,27 @@ const Payment = () => {
                     </div>
 
                     <div className="card_name">
-                        <label>Cardholder name</label>
-                        <input type="text" placeholder='Full name on card'/>
+                        <label>Karta nomi</label>
+                        <input type="text" placeholder="Kartaning to'liq nomi"/>
                     </div>
 
                     <div className="country">
-                        <label htmlFor="country">Country or region</label>
+                        <label htmlFor="country">Mamlakat & Shahar</label>
                         <select id="country" value={selectedValue} onChange={handleSelectChange}>
-                            <option value="" disabled hidden>Select your country</option>
-                            <option value="Uzbekistan">Uzbekistan</option>
-                            <option value="Kazakistan">Kazakistan</option>
-                            <option value="Turkmanistan">Turkmanistan</option>
-                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="" disabled hidden>Mamlakatizni tanlang </option>
+                            <option value="Uzbekistan">Uzbekiston</option>
+                            <option value="Kazakistan">Kazakiston</option>
+                            <option value="Turkmanistan">Turkmaniston</option>
+                            <option value="Tajikistan">Tojikistan</option>
                         </select>
                     </div>
                     <div className="securety">
                         <input type="checkbox"/>
-                        <label>Securety save my information</label>
-                        <p>Pay faster on site, everywhere Link is accepted</p>
+                        <label>Ma'lumotlarni saqlashga ruxsat</label>
+                        <p>Ma'lumotlar qayta kirish uchun yunaltiriladi</p>
                     </div>
 
-                    <button type='submit'>Pay</button>
+                    <button type='submit'>To'lov 5000.00 </button>
                 </form>
             </div>
             </div>

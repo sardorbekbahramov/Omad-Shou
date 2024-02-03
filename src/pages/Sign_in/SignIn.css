@@ -48,7 +48,7 @@
     background-color: #512da8;
     color: #fff;
     font-size: 12px;
-    padding: 10px 45px;
+    padding: 10px 25px;
     border: 1px solid transparent;
     border-radius: 8px;
     font-weight: 600;
@@ -226,11 +226,21 @@
         width: 50%;
     }
     .sign-in{
-        width: 60%;
+        width: 57%;
     }
     .sign-up{
         width: 60%;
         left: -60px;
+    }
+    .sign-up button {
+        position: relative;
+        width: 150px;
+        text-align: center;
+        font-size: 10px;
+    }
+    .toggle-right p,
+    .toggle-left p {
+        font-size: 12px;
     }
 }
 
