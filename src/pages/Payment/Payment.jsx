@@ -9,10 +9,12 @@ import Footer from '../../component/Footer/Footer';
 const Payment = () => {
     const [selectedValue, setSelectedValue] = useState('');
 
-    const handleSelectChange = (event) => {
+    const handleSelectChangeCountry = (event) => {
         setSelectedValue(event.target.value);
      };
-
+     const handleSelectChangeMoney = (event) => {
+        setSelectedValue(event.target.value);
+     };
 
 
     return (
@@ -28,13 +30,15 @@ const Payment = () => {
                     <div className="card">
                         <label>Karta malumotlari</label>
                         <input type="number" placeholder='1234 1234 1234 1234' required className='input-with-icons'/>
+                        <div className='icoons'>
                         <span className="input-icons">
                             <FaCcAmazonPay /> <FaCcApplePay className='one'/> <FaCcPaypal className='one'/>
                         </span>
+                        </div>
 
                         <input type="number" placeholder='MM/YY'required/>
                         <input type="number" placeholder='CVC' required className="input-with-icon"/>
-                        <span className="input-icon"><MdOutlinePayments/></span>
+                        <div className='icoons'><span className="input-icon"><MdOutlinePayments/></span></div>
                     </div>
 
                     <div className="card_name">
@@ -44,7 +48,7 @@ const Payment = () => {
 
                     <div className="country">
                         <label htmlFor="country">Mamlakat & Shahar</label>
-                        <select id="country" value={selectedValue} onChange={handleSelectChange}>
+                        <select id="country" value={selectedValue} onChange={handleSelectChangeMoney}>
                             <option value="" disabled hidden>Mamlakatizni tanlang </option>
                             <option value="Uzbekistan">Uzbekiston</option>
                             <option value="Kazakistan">Kazakiston</option>
@@ -52,13 +56,26 @@ const Payment = () => {
                             <option value="Tajikistan">Tojikistan</option>
                         </select>
                     </div>
+                    <div className="money">
+                        <label htmlFor="money">To'lov turi</label>
+                        <select id="money" value={selectedValue} onChange={handleSelectChangeCountry}>
+                            <option value="" disabled hidden>To'lov turini tanlang </option>
+                            <option value="5000.00">5000.00</option>
+                            <option value="10000.00">10000.00</option>
+                            <option value="15000.00">15000.00</option>
+                            <option value="100000.00">100000.00</option>
+                            <option value="500000.00">500000.00</option>
+                        </select>
+                    </div>
+
+
                     <div className="securety">
                         <input type="checkbox"/>
                         <label>Ma'lumotlarni saqlashga ruxsat</label>
                         <p>Ma'lumotlar qayta kirish uchun yunaltiriladi</p>
                     </div>
 
-                    <button type='submit'>To'lov 5000.00 </button>
+                    <button type='submit'>To'lov</button>
                 </form>
             </div>
             </div>
