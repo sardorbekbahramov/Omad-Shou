@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useForm } from '@formspree/react';
 import { MdOutlinePayments } from "react-icons/md";
 import { FaCcAmazonPay, FaCcApplePay, FaCcPaypal } from "react-icons/fa";
 
@@ -7,6 +8,17 @@ import Navbar from '../../component/Navbar/Navbar';
 import Footer from '../../component/Footer/Footer';
 
 const Payment = () => {
+//================= payment user form varification =================> 
+    const [state, handleSubmit, reset] = useForm('{your-form-id}');
+    if (state.succeeded) {
+        return <div>Thank you for signing up!</div>;
+    }
+
+
+
+//================= payment user form varification finished ========> 
+
+
     const [selectedValue, setSelectedValue] = useState('');
 
     const handleSelectChangeCountry = (event) => {
@@ -22,13 +34,13 @@ const Payment = () => {
             <Navbar/>
             <div className="payment_full">
             <div className="container-payment">
-                <form className='payment_form'>
+                <form className='payment_form' onSubmit={handleSubmit}>
                     <div className="email">
-                        <label>Email</label>
+                        <label htmlFor="email">Email</label>
                         <input type="email" placeholder='email@gmail.com'/>
                     </div>
                     <div className="card">
-                        <label>Karta malumotlari</label>
+                        <label htmlFor="number">Karta malumotlari</label>
                         <input type="number" placeholder='1234 1234 1234 1234' required className='input-with-icons'/>
                         <div className='icoons'>
                         <span className="input-icons">
@@ -42,7 +54,7 @@ const Payment = () => {
                     </div>
 
                     <div className="card_name">
-                        <label>Karta nomi</label>
+                        <label htmlFor="text">Karta nomi</label>
                         <input type="text" placeholder="Kartaning to'liq nomi"/>
                     </div>
 
@@ -68,14 +80,13 @@ const Payment = () => {
                         </select>
                     </div>
 
-
                     <div className="securety">
                         <input type="checkbox"/>
-                        <label>Ma'lumotlarni saqlashga ruxsat</label>
+                        <label htmlFor="checkbox">Ma'lumotlarni saqlashga ruxsat</label>
                         <p>Ma'lumotlar qayta kirish uchun yunaltiriladi</p>
                     </div>
 
-                    <button type='submit'>To'lov</button>
+                    <button type='submit' disabled={state.submitting} >To'lov</button>
                 </form>
             </div>
             </div>
