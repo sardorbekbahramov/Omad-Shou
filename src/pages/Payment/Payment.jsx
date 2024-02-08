@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import { useForm } from '@formspree/react';
 import { MdOutlinePayments } from "react-icons/md";
 import { FaCcAmazonPay, FaCcApplePay, FaCcPaypal } from "react-icons/fa";
 
@@ -8,17 +7,6 @@ import Navbar from '../../component/Navbar/Navbar';
 import Footer from '../../component/Footer/Footer';
 
 const Payment = () => {
-//================= payment user form varification =================> 
-    const [state, handleSubmit, reset] = useForm('{your-form-id}');
-    if (state.succeeded) {
-        return <div>Thank you for signing up!</div>;
-    }
-
-
-
-//================= payment user form varification finished ========> 
-
-
     const [selectedValue, setSelectedValue] = useState('');
 
     const handleSelectChangeCountry = (event) => {
@@ -34,7 +22,7 @@ const Payment = () => {
             <Navbar/>
             <div className="payment_full">
             <div className="container-payment">
-                <form className='payment_form' onSubmit={handleSubmit}>
+                <form className='payment_form'>
                     <div className="email">
                         <label htmlFor="email">Email</label>
                         <input type="email" placeholder='email@gmail.com'/>
@@ -86,7 +74,7 @@ const Payment = () => {
                         <p>Ma'lumotlar qayta kirish uchun yunaltiriladi</p>
                     </div>
 
-                    <button type='submit' disabled={state.submitting} >To'lov</button>
+                    <button type='submit'>To'lov</button>
                 </form>
             </div>
             </div>

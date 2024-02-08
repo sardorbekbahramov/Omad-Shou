@@ -15,12 +15,10 @@ const Navbar = () => {
   return (
     <>
     <Head/>
-      <nav className={`navbar ${isMobile ? 'mobile' : ''}`}>
-        <a href="">
-          <Link to={''}>
-            <img src={Logo} alt="" className="logo" />
+      <nav className={`navbar ${isMobile ? 'mobile' : ''}`}>    
+          <Link to={'/'}>
+            <img src={Logo} alt="img" className="logo" />
           </Link>
-        </a>
         <FaBars className='navbar__bar' onClick={handleToggle} />
         <ul className={`navbar__collection ${isMobile ? 'nav-links-MobileMenu' : ''}`}>
           <Link to={'/'} className="navbar__item">Bosh Sahifa</Link>

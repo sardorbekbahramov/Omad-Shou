@@ -22,6 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Uncomment the line below to exclude .env from version control
-.env
+
 
